@@ -1,1 +1,3 @@
-document.getAttribute("class");
+function tambah(a, b) {
+    return a + b;
+}
