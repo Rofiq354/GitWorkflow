@@ -1,20 +1,20 @@
 // Fungsi untuk menjumlahkan dua angka
-function tambah(a, b) {
+function tambah( a, b ) {
     return a + b;
 }
 
 // fungsi baru ditambahkan
-function kurang(a, b) {
+function kurang( a, b ) {
     return a - b;
 }
 
-function kali(a, b) {
+function kali( a, b ) {
     return a * b;
 }
 
 // Fungsi untuk membagi dua angka
 // Mengembalikan pesan error jika b bernilai 0
-function bagi(a, b) {
+function bagi( a, b ) {
     if (b === 0) {
         return "Error: tidak bisa membagi dengan 0";
     }
