@@ -41,3 +41,12 @@ function hitung(a, b, operator) {
         return a / b;
     }
 }
+
+// ===== TEST =====
+console.assert(tambah(2, 3) === 5, "Test tambah gagal");
+console.assert(tambah(-1, 1) === 0, "Test tambah negatif gagal");
+
+console.assert(bagi(10, 2) === 5, "Test bagi gagal");
+console.assert(bagi(5, 0) === "Error: tidak bisa membagi dengan 0", "Test bagi nol gagal");
+
+console.log("Semua test berhasil!");
