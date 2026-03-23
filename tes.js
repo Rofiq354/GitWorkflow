@@ -20,3 +20,16 @@ function bagi( a, b ) {
     }
     return a / b;
 }
+
+function hitung(a, b, operator) {
+    if (typeof a !== "number" || typeof b !== "number") {
+        return "Error: input harus berupa angka";
+    }
+    if (operator === "+") return a + b;
+    if (operator === "-") return a - b;
+    if (operator === "*") return a * b;
+    if (operator === "/") {
+        if (b === 0) return "Error: tidak bisa membagi dengan 0";
+        return a / b;
+    }
+}
