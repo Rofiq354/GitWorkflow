@@ -21,10 +21,18 @@ function bagi( a, b ) {
     return a / b;
 }
 
-function hitung(a, b, operator) {
+// validasi dipindah ke fungsi sendiri
+function validasiInput(a, b) {
     if (typeof a !== "number" || typeof b !== "number") {
         return "Error: input harus berupa angka";
     }
+    return null;
+}
+
+function hitung(a, b, operator) {
+    const error = validasiInput(a, b);
+    if (error) return error;
+
     if (operator === "+") return a + b;
     if (operator === "-") return a - b;
     if (operator === "*") return a * b;
